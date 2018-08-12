@@ -1,0 +1,292 @@
+<!--HTML wire frames for DART 2.0 - home page-->
+<!--Dynamic menu from Code Pen https://codepen.io/rishabhp/pen/aNXVbQ-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-coffee.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-coffee.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-coffee.ico">
+    <link rel="mask-icon" color="#5bbad5" href="favicon-coffee.ico">
+
+    <title>Review - Basic search - Restaurant Recommender</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+            Restaurant Recommender
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top: 3em;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html" style="color: #337ab7;">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </a>
+          <a href="search-basic_result.html" class="navbar-brand" style="color: #337ab7;">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+          <a class="navbar-brand">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 6em;">
+      <div class="col-md-12">
+        <h3>
+          Reviews of [restaurantName]
+        </h3>
+
+        <form>
+
+          <div class="col-md-12">
+            <ul class="list-group">
+              <li class="list-group-item active">
+                <strong>
+                  Review #1 of [restaurantName]
+                </strong>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item text-center">
+                [dd - mm - yyyy]
+              </li>
+              <li class="list-group-item text-center">
+                [street address]
+              </li>
+              <li class="list-group-item text-center" style="font-size: 1.5em;">
+                <span class="label label-success" style="margin: .5em;">
+                  Ambiance
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Price
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-danger" style="margin: .5em;">
+                  Service
+                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Quality
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+              </li>
+              <li class="list-group-item">
+                We couldn’t come to the basque region and not try this 3 Michelin star resto, and it didn’t disappoint.
+                <br>
+                Fine dining, with local ingredients. The tasting menu is mainly fish and vegetables, though if you’re a meat lover the al a carte provided the meat. The flavours were symphonic, with Japanese and Icelandic influences. Umami tasting. Go hungry because the portions are large. It would be hard to criticise food prepared to such a high standard.
+                <br>
+                The wine parings gave the option of trying the local basque region wines, otherwise the very large wine list offered an eclectic selection suitable for any purse.
+                <br>
+                We were not very happy with the service.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <ul class="list-group">
+              <li class="list-group-item active">
+                <strong>
+                  Review #2 of [restaurantName]
+                </strong>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item text-center">
+                [dd - mm - yyyy]
+              </li>
+              <li class="list-group-item text-center">
+                [street address]
+              </li>
+              <li class="list-group-item text-center" style="font-size: 1.5em;">
+                <span class="label label-success" style="margin: .5em;">
+                  Ambiance
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Price
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-danger" style="margin: .5em;">
+                  Service
+                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Quality
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+              </li>
+              <li class="list-group-item">
+                We couldn’t come to the basque region and not try this 3 Michelin star resto, and it didn’t disappoint.
+                <br>
+                Fine dining, with local ingredients. The tasting menu is mainly fish and vegetables, though if you’re a meat lover the al a carte provided the meat. The flavours were symphonic, with Japanese and Icelandic influences. Umami tasting. Go hungry because the portions are large. It would be hard to criticise food prepared to such a high standard.
+                <br>
+                The wine parings gave the option of trying the local basque region wines, otherwise the very large wine list offered an eclectic selection suitable for any purse.
+                <br>
+                We were not very happy with the service.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <ul class="list-group">
+              <li class="list-group-item active">
+                <strong>
+                  Review #3 of [restaurantName]
+                </strong>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item text-center">
+                [dd - mm - yyyy]
+              </li>
+              <li class="list-group-item text-center">
+                [street address]
+              </li>
+              <li class="list-group-item text-center" style="font-size: 1.5em;">
+                <span class="label label-success" style="margin: .5em;">
+                  Ambiance
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Price
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-danger" style="margin: .5em;">
+                  Service
+                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Quality
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+              </li>
+              <li class="list-group-item">
+                We couldn’t come to the basque region and not try this 3 Michelin star resto, and it didn’t disappoint.
+                <br>
+                Fine dining, with local ingredients. The tasting menu is mainly fish and vegetables, though if you’re a meat lover the al a carte provided the meat. The flavours were symphonic, with Japanese and Icelandic influences. Umami tasting. Go hungry because the portions are large. It would be hard to criticise food prepared to such a high standard.
+                <br>
+                The wine parings gave the option of trying the local basque region wines, otherwise the very large wine list offered an eclectic selection suitable for any purse.
+                <br>
+                We were not very happy with the service.
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-12">
+            <ul class="list-group">
+              <li class="list-group-item active">
+                <strong>
+                  Review #3 of [restaurantName]
+                </strong>
+              </li>
+              <li class="list-group-item text-center">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </li>
+              <li class="list-group-item text-center">
+                [dd - mm - yyyy]
+              </li>
+              <li class="list-group-item text-center">
+                [street address]
+              </li>
+              <li class="list-group-item text-center" style="font-size: 1.5em;">
+                <span class="label label-success" style="margin: .5em;">
+                  Ambiance
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Price
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+                <span class="label label-danger" style="margin: .5em;">
+                  Service
+                  <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                </span>
+                <span class="label label-success" style="margin: .5em;">
+                  Quality
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                </span>
+              </li>
+              <li class="list-group-item">
+                We couldn’t come to the basque region and not try this 3 Michelin star resto, and it didn’t disappoint.
+                <br>
+                Fine dining, with local ingredients. The tasting menu is mainly fish and vegetables, though if you’re a meat lover the al a carte provided the meat. The flavours were symphonic, with Japanese and Icelandic influences. Umami tasting. Go hungry because the portions are large. It would be hard to criticise food prepared to such a high standard.
+                <br>
+                The wine parings gave the option of trying the local basque region wines, otherwise the very large wine list offered an eclectic selection suitable for any purse.
+                <br>
+                We were not very happy with the service.
+              </li>
+            </ul>
+          </div>
+
+    </div><!-- container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+
+</html>

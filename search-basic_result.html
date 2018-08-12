@@ -1,0 +1,235 @@
+<!--HTML wire frames for DART 2.0 - home page-->
+<!--Dynamic menu from Code Pen https://codepen.io/rishabhp/pen/aNXVbQ-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon-coffee.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-coffee.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-coffee.ico">
+    <link rel="mask-icon" color="#5bbad5" href="favicon-coffee.ico">
+
+    <title>Results - Basic search - Restaurant Recommender</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <i class="fa fa-coffee" aria-hidden="true"></i>
+            Restaurant Recommender
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-default navbar-fixed-top" style="margin-top: 3em;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html" style="color: #337ab7;">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </a>
+          <a class="navbar-brand">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="margin-top: 6em;">
+      <div class="col-md-12">
+        <h3>
+          Basic Search of Restaurants
+        </h3>
+
+        <form>
+
+          <div class="col-md-12">
+            <div class="form-group form-group-lg">
+              <h4 hidden>
+                <label for="sort">
+                  Sort restaurants by
+                </label>
+              </h4>
+              <select class="form-control" id="sort">
+                <option>Sort restaurants by</option>
+                <option selected>Stars</option>
+                <option>Number of reviews</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="form-group form-group-lg">
+              <h4 hidden>
+                <label for="filter">
+                  Filter restaurants by
+                </label>
+              </h4>
+              <select class="form-control" id="filter">
+                <option>Filter restaurants by</option>
+                <option selected>WiFi</option>
+                <option>Pets</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <a href="search-basic_result.html" class="btn btn-primary btn-lg btn-block" role="button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              Submit
+            </a>
+          </div>
+
+        </form>
+
+        <div class="col-md-12">
+          <hr>
+        </div>
+
+        <div class="col-md-12">
+          <div class="alert alert-success" role="alert">
+            We found <strong>##</strong> restaurants!
+            Select the restaurant names below for details.
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Restaurant Name #1
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  Restaurant reviews: <strong>32</strong>
+                  <br>
+                  <a href="#" TARGET="_blank">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    [restaurant address]
+                  </a>
+                </div>
+                <div class="panel-footer">
+                  <a href="search-basic_result_review.html" class="btn btn-primary btn-lg btn-block" role="button">
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    View reviews
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Restaurant Name #2
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  Restaurant reviews: <strong>28</strong>
+                  <br>
+                  <a href="#" TARGET="_blank">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    [restaurant address]
+                  </a>
+                </div>
+                <div class="panel-footer">
+                  <a href="search-basic_result_review.html" class="btn btn-primary btn-lg btn-block" role="button">
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    View reviews
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Restaurant Name #3
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                  Restaurant reviews: <strong>12</strong>
+                  <br>
+                  <a href="#" TARGET="_blank">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    [restaurant address]
+                  </a>
+                </div>
+                <div class="panel-footer">
+                  <a href="search-basic_result_review.html" class="btn btn-primary btn-lg btn-block" role="button">
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    View reviews
+                  </a>
+                </div>
+              </div>
+            </div>
+
+    </div><!-- container -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
